@@ -16,11 +16,15 @@
       const addButton = document.getElementById("add-button")
       const memoContainer = document.getElementById("memo-container")
 
-      addButton.onclick = function() {
-        console.log(memoInput.value)
+      const createDiv = function() {
         const memo = document.createElement("div")
         memo.textContent = memoInput.value
         memoContainer.append(memo)
+      }
+      addButton.onclick = function() {
+        createDiv()
+
+        memoInput.value = ""
       }
     </script>
   </body>
