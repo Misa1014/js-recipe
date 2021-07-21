@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>私の趣味は何でしょう？</h1>
+    <button id="button1">ダイビング</button>
+    <button id="button2">運動</button>
+    <button id="button3">バイト</button>
+
+    <div id="feedback"></div>
+    <script>
+      const B1 = document.getElementById("button1")
+      const B2 = document.getElementById("button2")
+      const B3 = document.getElementById("button3")
+      const feedback = document.getElementById("feedback")
+
+      B1.onclick = function() {
+        feedback.textContent = "正解！"
+      }
+      B2.onclick = function() {
+        feedback.textContent = "残念！だいっきらいです"
+      }
+      B3.onclick = function() {
+        feedback.textContent = "なんでやねん！"
+      }
+    </script>
+  </body>
+</html>

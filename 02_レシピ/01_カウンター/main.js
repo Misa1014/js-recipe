@@ -1,9 +1,11 @@
-//display定数宣言、HTMLの文章から
 const display = document.getElementById("display")
-const plusButton = document.getElementById("plus-button")
+const plusbutton = document.getElementById("plus-button")
 
+//ここできなかった！！！！
 let count = 0
-plusButton.onclick = function() {
+plusbutton.onclick = function() {
+  //ここも思い浮かばなかった！
   count += 1
   display.textContent = count
 }
+//あとからHTML変えられる

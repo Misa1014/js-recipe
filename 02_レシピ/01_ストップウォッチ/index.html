@@ -1,21 +1,16 @@
-<!--
-  1. "!"と入力して、tabキーを押し、HTMLの雛形を作成する。
-  2. script要素でmain.jsを読み込む。
--->
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <h2 id="display">0</h2>
+<div class="main-container">
+  <div class="list-container">
+    <div class="list-header">ギークサロン</div>
+    <div class="cards-container" id="cards-container">
+      <!-- ここにカードを追加する -->
     </div>
-    <button id="button">start</button>
+    <div class="list-footer">
+      <div class="input-container">
+        <input type="text" class="input-todo" id="input-todo" />
+        <div class="input-button" id="add-button">追加</div>
+      </div>
+    </div>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
-</html>
+  <!-- 省略 -->
+</div>
