@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <section>
+        <h2>入力画面</h2>
+        <input type="number" name="" v-model="nyuryokugaku" />
+        <p>入力額:{{nyuryokugaku}}円</p>
+        <button v-on:click="nyukin">入金</button>
+        <button v-on:click="syukkin">出金</button>
+      </section>
+      <section>
+        <h2>口座残高</h2>
+        <p>{{zandaka}}円</p>
+      </section>
+      <section>
+        <h2>取引記録</h2>
+        <div v-for="log in logs">
+          <div>日付:{{log.date}}</div>
+          <div>操作:{{log.type}}</div>
+          <div>金額:{{log.money}}</div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
